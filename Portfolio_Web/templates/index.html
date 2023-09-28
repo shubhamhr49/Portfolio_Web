@@ -1,0 +1,325 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Portfolio by Shubham</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{%static 'favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{%static 'favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{%static 'favicon/site.webmanifest' %}">
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</head>
+
+<body class="is-preload">
+	<!-- Header -->
+	<div id="header">
+		<div class="top">
+			<!-- Logo -->
+			<div id="logo">
+				<span class="image avatar48">
+					<img src="{% static 'images/avatar.jpg' %}" alt="Profile Pic" />
+				</span>
+				<h1 id="title">Shubham Sharma</h1>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li>
+						<a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a>
+					</li>
+					<li>
+						<a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+					</li>
+
+					<li>
+						<a href="#myskills" id="myskill-link">
+							<span class="icon solid fa-user">My Skills</span></a>
+					</li>
+					<li>
+						<a href="#education" id="about-link"><span
+								class="icon solid fa-user-graduate">Education</span></a>
+					</li>
+					<li>
+						<a href="#certification" id="certification-link"><span
+								class="icon solid fa-certificate">Certifications</span></a>
+					</li>
+					<li>
+						<a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="bottom">
+			<!-- Social Icons -->
+			<ul class="icons">
+				<li>
+					<a href="https://github.com/shubhamhr49" class="icon brands fa-github"><span
+							class="label">Github</span></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/shubham-sharma-b38098144/"
+						class="icon brands fa-linkedin"><span class="label">Linkedin</span></a>
+				</li>
+				<li>
+					<a href="mailto:shubhamhr49@gmail.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+				<header>
+					<h2 class="alt">
+						Hi! I'm <strong>Shubham Sharma</strong>, a passionate
+						<a href="https://www.linkedin.com/in/shubham-sharma-b38098144/" target="_blank">data analyst and
+							data science
+							enthusiast</a>.
+					</h2>
+					<p>
+						With a foundation in Computer Applications, I'm eager to
+						contribute to impactful projects in a dynamic, data-driven
+						setting.I am Shubham Sharma from Pinjore, India. Specializing in Python,
+						SQL, and Data Analysis, my journey has seen projects like Time series forecasting and health
+						prediction web apps. Beyond data, my interests
+						lie in music, cricket, and embracing new technologies.
+					</p>
+				</header>
+
+				<footer>
+					<a href="#portfolio" class="button scrolly">My Portfolio</a>
+				</footer>
+			</div>
+		</section>
+
+		<!-- Portfolio -->
+		<section id="portfolio" class="two">
+			<div class="container">
+				<header>
+					<h2>Portfolio</h2>
+				</header>
+
+				<p>
+					Dive into my collection of projects where I've applied my analytical skills and programming
+					expertise. Ranging from weather data analysis to sentiment analysis and health prediction, each
+					project showcases my commitment to data-driven insights and solutions.
+				</p>
+
+				<div class="row">
+					<div class="col-12 col-12-mobile">
+						<div class="project">
+							<div class="carousel-item">
+								<img src="{% static 'images/health_prediction.png' %}" alt="Health Prediction Web App">
+								<a href="health_prediction_web_app.html">Health Prediction Web App</a>
+								<div class="card-text">
+									<p>Objective: The Health Web App is designed to predict the likelihood of heart
+										disease and diabetes in patients using machine learning, specifically the
+										Logistic Regression algorithm. Users input their health-related data, and the
+										app provides predictions along with explanations.</p>
+									<p>Skills Utilized: Python, Flask, Logistic Regression, EDA, HTML, CSS</p>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<img src="{% static 'images/time_series.webp' %}" alt="Time Series Forecasting">
+								<a href="time_series_forecasting.html">Time Series Forecasting</a>
+								<div class="card-text">
+									<p>Objective: The primary objective of this project is to forecast the future prices
+										of gold and silver based on historical time series data. Collect, clean, and
+										visualize historical price data to identify trends.</p>
+									<p>Skills Utilized: Python, Machine Learning, Data Visualization, Data Cleaning</p>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<img src="{% static 'images/cricket-stats.jpg' %}" alt="Cricket Analysis">
+								<a href="cricket_analysis.html">Cricket Analysis</a>
+								<div class="card-text">
+									<p>Objective: To Scrap the cricket website collections to create a dataset of
+										popular players, teams for EDA. Done analysis to reveal the hidden details and
+										stats of the players.</p>
+									<p>Skills Utilized: Python, Data Scraping (Beautiful Soup), Data Collection, Data
+										Cleaning, EDA</p>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<img src="{% static 'images/dashboard.png' %}" alt="SuperStore Dashboard">
+								<a href="superstore_dashboard.html">SuperStore Dashboard</a>
+								<div class="card-text">
+									<p>Objective: Provide valuable insights to business entities regarding the
+										effectiveness of their sales strategies through visualization and charts.
+										Leverage historic data and apply time series analysis and generate sales
+										forecasts for the next 15 days.</p>
+									<p>Skills Utilized: Power BI, ETL, Time Series Analysis, Data Visualization</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- My Education  -->
+		<section id="education" class="three">
+			<div class="education">
+				<h2>Education</h2>
+
+				<h2>Master Of Computer Application</h2>
+				<p>Chandigarh Business School Of Administration</p>
+				<p>07/2019 - 07/2021, Mohali, Punjab</p>
+				<p>CGPA: 7.34</p>
+
+				<h2>Bachelor Of Computer Application</h2>
+				<p>Chandigarh College Of Technology</p>
+				<p>07/2016 - 07/2019, Mohali, Punjab</p>
+				<p>CGPA: 7.22</p>
+
+			</div>
+		</section>
+
+		<!-- My Certifications  -->
+		<section id="certification" class="four">
+			<div class="certification">
+				<h2>CERTIFICATION</h2>
+				<h2>Data Science with Python (07/2022 - 12/2022)</h2>
+				<p>Skills Acquired: Python, SQL, Statistics, Data EDA, ML</p>
+
+				<h2>Python Web Development (07/2021 - 12/2021)</h2>
+				<p>Skills Acquired: Python, SQL, Flask, Django, HTML, CSS</p>
+			</div>
+		</section>
+
+		<!-- My Skills  -->
+		<section id="myskills" class="page-section bg-primary text-white">
+			<h2 class="page-section-heading text-center text-uppercase">My skills</h2>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+				<div class="divider-custom-line"></div>
+			</div>
+
+			<!-- Skills Icons-->
+			<div class="container">
+				<div class="row">
+
+					<div class="col col-sm-2">
+						<i class="devicon-python-plain">
+							<span>PYTHON</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-pandas-original">
+							<span>PANDAS</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-numpy-original">
+							<span>NUMPY</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-jupyter-plain">
+							<span>JUPYTER</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-django-plain">
+							<span>DJANGO</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-postgresql-plain">
+							<span>POSTGRESQL</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-git-plain">
+							<span>GIT</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-html5-plain">
+							<span>HTML</span>
+						</i>
+					</div>
+
+					<div class="col col-sm-2">
+						<i class="devicon-css3-plain">
+							<span>CSS</span>
+						</i>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="five">
+			<div class="container">
+				<header>
+					<h2>Contact</h2>
+				</header>
+
+				<p>
+					Eager to discuss data-driven projects or collaboration
+					opportunities? Reach out to me anytime! Based in Pinjore, India, I'm
+					always open to meaningful conversations and new challenges in the
+					field of data analysis and science.
+				</p>
+
+				<form method="post" action="#">
+					<div class="row">
+						<div class="col-6 col-12-mobile">
+							<input type="text" name="name" placeholder="Name" />
+						</div>
+						<div class="col-6 col-12-mobile">
+							<input type="text" name="email" placeholder="Email" />
+						</div>
+						<div class="col-12">
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+						<div class="col-12">
+							<input type="submit" value="Send Message" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
